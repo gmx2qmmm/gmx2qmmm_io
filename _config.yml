@@ -1,2 +1,14 @@
 theme: jekyll-theme-dinky
 markdown: kramdown 
+
+
+
+title: gmx2qmmm
+locale: en_US
+logo: # filename of a logo image that has been placed into your images directory
+
+# Enter the following platform usernames if you would like for them to appear on your site.
+owner:
+  bio: "A python interface for Quantum mechanics/Molecular mechanics (QM/MM) computation."
+  email: gmx2qmmm@gmail.com
+  github: gmx2qmmm
