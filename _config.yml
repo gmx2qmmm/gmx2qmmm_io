@@ -24,5 +24,11 @@ owner:
   email: gmx2qmmm@gmail.com
   github: gmx2qmmm/gmx2qmmm_portable
 
-sidebar:
-  nav: "docs"
+defaults:
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      sidebar:
+        nav: "docs"
