@@ -23,6 +23,10 @@ Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single 
 [BFGS]:<https://en.wikipedia.org/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm>
  
  
+[python 2.7]:<https://www.python.org/download/releases/2.7>
+[Gaussian16]:<https://gaussian.com/gaussian16/>
+[Gromacs 5.0.2]:<http://www.gromacs.org>
+[Gaussian]:<https://gaussian.com/gaussian16/>
  
  
 <!--You can use the [editor on GitHub](https://github.com/gmx2qmmm/gmx2qmmm_io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.-->
