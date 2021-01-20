@@ -39,6 +39,8 @@ In some cases, you might also need to provide the mass of an atom, since the for
 The QM atoms file is simply a list of numbers in any order or number of lines. The user may use the free
 formatting to, e.g., visually separate different residues.
 
+[Back to TOP](input_params)
+
 ## QM parameters
 
 The following options, one per line, may be given in this file; in any order.
