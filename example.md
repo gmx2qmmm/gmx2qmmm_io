@@ -4,7 +4,20 @@ Glycine serine (GLYSER) includes 21 atoms. In this case, we select the first 7 a
 
 ![alt text](https://github.com/gmx2qmmm/gmx2qmmm_portable/blob/master/example/glyser.png?raw=true)
 
-### If you want to build everything from the beginning and customize names of input files, follow the processes below.
+---
+### Examples in `example/sp` and `example/opt`
+
+- Single point calculation
+    1. Go to `/example/sp` directory
+    2. Run `python ../../gmx2qmmm.py`
+
+- Geometry optimization 
+    1. Go to `/example/opt` directory
+    2. Run `python ../../gmx2qmmm.py`
+
+
+---
+### Processes from zero and customize names of input files
 
 1. Prepare **Coordinate file (.g96 or .gro)** and **Topology (.top)** files of GLYSER.
 2. Create **QM atom file (.ndx)**: Since we select the first 7 atoms in the QM region, set **QM atom file (.ndx)**
