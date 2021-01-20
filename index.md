@@ -15,8 +15,8 @@ Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single 
 
 ## Downloads
 
-- [Manual downloads in Git](https://github.com/gmx2qmmm/gmx2qmmm_portable)
-- Git clone
+- [Download in Git manually](https://github.com/gmx2qmmm/gmx2qmmm_portable)
+- `git clone`
   - python 2: `git clone --branch master https://github.com/gmx2qmmm/gmx2qmmm_portable.git`
   - python 3: `git clone --branch p3 	https://github.com/gmx2qmmm/gmx2qmmm_portable.git`
 
