@@ -13,6 +13,14 @@ Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single 
  - [Gaussian16] (and earlier version)
  - [Gromacs 5.0.2] (and earlier version)
 
+## Downloads
+
+- [Manual downloads in Git](https://github.com/gmx2qmmm/gmx2qmmm_portable)
+- Git clone
+  - python 2: `git clone --branch master https://github.com/gmx2qmmm/gmx2qmmm_portable.git`
+  - python 3: `git clone --branch p3 	https://github.com/gmx2qmmm/gmx2qmmm_portable.git`
+
+
 ## **gmx2qmmm** jobs
 
 |Job type|Calculation|
