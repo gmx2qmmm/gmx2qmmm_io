@@ -26,14 +26,14 @@ Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single 
 
 ## **gmx2qmmm** input files
 
-[see details](input_params/input_params.md)
+[see details](input_params/input_params)
 
 |Input files|Command|Default input name|
 | ------ | ------ | ------ |
 |Coordinate file (.g96 or .gro)|-c|conf.g96|
 |Topology (.top)|-p|topol.top|
 |QM atoms file (.ndx)|-n|qmatoms.ndx|
-|[QM parameters](qm_para.md) (.dat)|-qm|qm.dat|
+|[QM parameters](qm_para) (.dat)|-qm|qm.dat|
 |MM parameters (.dat)|-mm|mm.dat|
 |QM/MM parameters (.dat)|-qmmm|qmmm.dat|
 |Active atoms (.ndx)|-act|act.ndx|
