@@ -19,6 +19,8 @@ The required input files in the package are
 
 This file should be taken almost as it comes from your Gromacs simulation. It needs “reboxing” in case your box is not cubic. Make sure your molecule is not suffering from periodic boundary artifacts. All these caveats however should be taken care of anyway due to the typical ways of QM/MM practice (such as preparing your system centered on a region of interest, surrounded by a drop of frozen solvent, removing all other parts of the system).
 
+- [TOP](#Input-files)
+
 ## Topology
 
 You might need to change the .top file according to your QM/MM preparatory steps (such as reducing the number of solvent molecules and ions in the molecule list at the end of your topology). Apart from that, it is best to copy some of the .itp files and prepare simplified copies. For example, a tip3p.itp in a force field may contain several “if” clauses what to use and when. **gmx2qmmm cannot decide which of the different parameter sets to use!** Therefore, **delete all “if” clauses in your (copied) .itp files and present only the desired parameters!**
