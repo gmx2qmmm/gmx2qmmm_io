@@ -13,7 +13,7 @@ Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single 
  - [Gaussian16] (and earlier version)
  - [Gromacs 5.0.2] (and earlier version)
 
-## **gmx2qmmm** job
+## **gmx2qmmm** jobs
 
 |Job type|Calculation|
 | --- | --- |
@@ -24,8 +24,20 @@ Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single 
 [Conjugate gradient]:<https://en.wikipedia.org/wiki/Conjugate_gradient_method>
 [BFGS]:<https://en.wikipedia.org/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm>
 
-## **gmx2qmmm** parameters
-- [QM parameters](qm_para.md)
+## **gmx2qmmm** input files
+
+|Input files|Command|Default input name|
+| ------ | ------ | ------ |
+|Coordinate file (.g96 or .gro)|-c|conf.g96|
+|Topology (.top)|-p|topol.top|
+|QM atoms file(.ndx)|-n|qmatoms.ndx|
+|[QM parameters](qm_para.md)(.dat)|-qm|qm.dat|
+|MM parameters (.dat)|-mm|mm.dat|
+|QM/MM parameters (.dat)|-qmmm|qmmm.dat|
+|Active atoms (.ndx)|-act|act.ndx|
+|Path file (.dat)|-path|path.dat|
+|Logfile (.log)|-g|logfile|
+
 
 ## References
 
