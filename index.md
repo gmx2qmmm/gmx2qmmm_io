@@ -14,8 +14,9 @@ Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single 
  - [Gromacs 5.0.2] (and earlier version)
 
 ## **gmx2qmmm** job
+
 |Job type|Calculation|
-| ------ | ------ |
+| --- | --- |
 |Single point calcuation (SP)|Calculate single point energy and forces (.xyz) |
 |Geometry optimizations (OPT)|Optimize the system energy via optimizer ([Steepest descent], [Conjugate gradient] or [BFGS])|
 
