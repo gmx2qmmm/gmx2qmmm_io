@@ -38,6 +38,7 @@ Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single 
 |Path file (.dat)|-path|path.dat|
 |Logfile (.log)|-g|logfile|
 
+[see details](input_params/input_params.md)
 
 ## References
 
