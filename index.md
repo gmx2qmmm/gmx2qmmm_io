@@ -2,6 +2,30 @@
 
 **gmx2qmmm** is a python interface for Quantum mechanics/Molecular mechanics (QM/MM) calculation.
  This is commented out. 
+ 
+---
+## Overview
+
+**gmx2qmmm** is a python package to bridge [Gaussian] and [Gromacs]. The test runs were performed using [Gaussian16] and [Gromacs 5.0.2], but the code should be able to read earlier Gaussian and other Gromacs versions. The only limits are the formats of the human-readable input and output files of each program, as such, conversion scripts can be written to make the interface work with any version, if the current code does not support it.
+Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single point calculations (i.e., the current energy of your system) or geometry optimizations. (Other ultilities are ongoing)
+
+## System requirements
+ - [python 2.7] 
+ - [Gaussian16] (and earlier version)
+ - [Gromacs 5.0.2] (and earlier version)
+## **gmx2qmmm** job
+|Job type|Calculation|
+| ------ | ------ |
+|Single point calcuation (SP)|Calculate single point energy and forces (.xyz) |
+|Geometry optimizations (OPT)|Optimize the system energy via optimizer ([Steepest descent], [Conjugate gradient] or [BFGS])|
+
+[Steepest descent]:<https://en.wikipedia.org/wiki/Gradient_descent>
+[Conjugate gradient]:<https://en.wikipedia.org/wiki/Conjugate_gradient_method>
+[BFGS]:<https://en.wikipedia.org/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm>
+ 
+ 
+ 
+ 
 <!--You can use the [editor on GitHub](https://github.com/gmx2qmmm/gmx2qmmm_io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.-->
 
 <!--Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.-->
