@@ -7,18 +7,23 @@ Glycine serine (GLYSER) includes 21 atoms. In this case, we select the first 7 a
 ### If you want to build everything from the beginning and customize names of input files, follow the processes below.
 
 1. Prepare **Coordinate file (.g96 or .gro)** and **Topology (.top)** files of GLYSER.
-2. Since we select the first 7 atoms in the QM region, set **QM atom file (.ndx)**
+2. Create **QM atom file (.ndx)**: Since we select the first 7 atoms in the QM region, set **QM atom file (.ndx)**
     ```
     1 2 3 4 5 6 7
     ```
-3. The total chages of QM region is 1, so set the parameter _charge=1_ in **QM parameters (.dat)**. Others are maintained as default.
+3. Create **QM parameters (.dat)**: The total chages of QM region is 1, so set the parameter _charge=1_ in **QM parameters (.dat)**. Others are maintained as default.
     ```
     charge=1
     ```
-4. We use default setting in **MM parameters (.dat)**, **QM/MM parameters (.dat)**, so keep the file empty.
-5. Setup your software path in **path.dat**
-6. Select active atoms in the calculation, in this case we select all. So set **Active atoms (.ndx)
-**,
+4. Create **MM parameters (.dat)**: We use default setting in **MM parameters (.dat)**, so keep it empty.
+5. Create **QM/MM parameters (.dat)**: If we run 
+    - A SP calculation (default setting), keep **QM/MM parameters (.dat)** empty.
+    - A OPT calculation, set parameter _jobtype=OPT_ in **QM/MM parameters (.dat)**
+        ```
+        jobtype=OPT
+        ```
+5. Create **Path file (.dat)**: Setup your software path in **Path file (.dat)**
+6. Create **Active atoms (.ndx)**: Select active atoms in the calculation, in this case we select all. So set **Active atoms (.ndx)**,
     ```
     1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21
     ```
