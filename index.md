@@ -17,8 +17,10 @@ Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single 
 
 - [Download in Git manually](https://github.com/gmx2qmmm/gmx2qmmm_portable)
 - `git clone`
-  - python 2: ```git clone --branch master https://github.com/gmx2qmmm/gmx2qmmm_portable.git```
-  - python 3: ```git clone --branch p3 	https://github.com/gmx2qmmm/gmx2qmmm_portable.git```
+  - python 2: 
+     ```git clone --branch master https://github.com/gmx2qmmm/gmx2qmmm_portable.git```
+  - python 3: 
+     ```git clone --branch p3 	https://github.com/gmx2qmmm/gmx2qmmm_portable.git```
 
 ## Startup examples : glycine serine
  
@@ -27,8 +29,6 @@ The turtorial contains SP and OPT calculation of glycine serine (GLYSER).
 [See the tutorial](example)
 
 ![alt text](https://github.com/gmx2qmmm/gmx2qmmm_portable/blob/master/example/glyser.png?raw=true)
-
-
 
 ## **gmx2qmmm** jobs
 
@@ -43,7 +43,9 @@ The turtorial contains SP and OPT calculation of glycine serine (GLYSER).
 
 ## **gmx2qmmm** input files
 
+```
 usage: gmx2qmmm.py [-h] [-c COORD] [-p TOP] [-n QMATOMS] [-qm QMFILE][-mm MMFILE] [-qmmm QMMMFILE] [-act ACT] [-path PATHFILE]                [-g LOGFILE]
+```
 
 [see details](input_params/input_params)
 
