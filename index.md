@@ -28,7 +28,7 @@ Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single 
 
 > A user‐friendly, Python‐based quantum mechanics/Gromacs interface: gmx2qmmm
 > Jan P. Götze, Yuan‐Wei Pi, Simon Petry, Fabian Langkabel,  Jan Felix Witte, Oliver Lemke
-> https://doi.org/10.1002/qua.26486
+> [https://doi.org/10.1002/qua.26486]
 
 ## Support and development
 For bug reports/suggestions/complaints please raise an issue on [GitHub].
@@ -43,6 +43,7 @@ Or contact us directly: [gmx2qmmm@gmail.com]
 [GitHub]:<https://github.com/gmx2qmmm/gmx2qmmm_portable>
 [gmx2qmmm@gmail.com]:<mailto:gmx2qmmm@gmail.com>
 [gmx2qmmm reference]:<https://drive.google.com/file/d/1B6YNfCFRB4jqweVABamPQWlgziFlNIDK/view?usp=sharing>
+[https://doi.org/10.1002/qua.26486]:<https://doi.org/10.1002/qua.26486>
  
 <!--You can use the [editor on GitHub](https://github.com/gmx2qmmm/gmx2qmmm_io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.-->
 
