@@ -20,13 +20,15 @@ Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single 
   - python 2: `git clone --branch master https://github.com/gmx2qmmm/gmx2qmmm_portable.git`
   - python 3: `git clone --branch p3 	https://github.com/gmx2qmmm/gmx2qmmm_portable.git`
 
-## Quick example : glycine serine
+## Startup examples : glycine serine
  
-![alt text](https://github.com/gmx2qmmm/gmx2qmmm_portable/blob/master/example/glyser.png?raw=true)
-
 The turtorial contains SP and OPT calculation of glycine serine (GLYSER).
 
 [See the tutorial](example)
+
+![alt text](https://github.com/gmx2qmmm/gmx2qmmm_portable/blob/master/example/glyser.png?raw=true)
+
+
 
 ## **gmx2qmmm** jobs
 
