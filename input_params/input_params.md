@@ -14,7 +14,7 @@ The required input files in the package are
 |Path file (.dat)|-path|path.dat|
 |Logfile (.log)|-g|logfile|
 
-[Back to HOME](https://gmx2qmmm.github.io/gmx2qmmm_io/)
+[Back to HOME](index.md)
 
 ## Coordinate file
 
@@ -66,4 +66,4 @@ This logfile contains all relevant actions of gmx2qmmm with a time stamp for eac
 
 [Back to TOP](input_params/input_params.md)
 
-[Back to HOME](https://gmx2qmmm.github.io/gmx2qmmm_io/)
+[Back to HOME](index.md)
