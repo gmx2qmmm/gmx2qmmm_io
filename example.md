@@ -1,4 +1,4 @@
-# Quick Start : glycine serine (GLYSER)
+# Startup example : glycine serine (GLYSER)
 
 Glycine serine (GLYSER) includes 21 atoms. In this case, we select the first 7 atoms in the QM region and other atoms are in MM region. The figure is showed below.
 
@@ -14,7 +14,6 @@ Glycine serine (GLYSER) includes 21 atoms. In this case, we select the first 7 a
 - Geometry optimization 
     1. Go to `/example/opt` directory
     2. Run `python ../../gmx2qmmm.py`
-
 
 ---
 ### Processes from zero and customize names of input files
