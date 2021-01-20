@@ -1,4 +1,6 @@
-## Welcome to GitHub Pages
+## Welcome to gmx2qmmm
+
+**gmx2qmmm** is a python interface for Quantum mechanics/Molecular mechanics (QM/MM) calculation.
 
 You can use the [editor on GitHub](https://github.com/gmx2qmmm/gmx2qmmm_io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
