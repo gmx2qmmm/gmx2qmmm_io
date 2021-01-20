@@ -14,13 +14,13 @@ The required input files in the package are
 |Path file (.dat)|-path|path.dat|
 |Logfile (.log)|-g|logfile|
 
-[Back to HOME](../index.md)
+[Back to HOME](../index)
 
 ## Coordinate file
 
 This file should be taken almost as it comes from your Gromacs simulation. It needs “reboxing” in case your box is not cubic. Make sure your molecule is not suffering from periodic boundary artifacts. All these caveats however should be taken care of anyway due to the typical ways of QM/MM practice (such as preparing your system centered on a region of interest, surrounded by a drop of frozen solvent, removing all other parts of the system).
 
-[Back to TOP](input_params.md)
+[Back to TOP](input_params)
 
 ## Topology
 
