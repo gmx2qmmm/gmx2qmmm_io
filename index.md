@@ -2,7 +2,7 @@
 
 **gmx2qmmm** is a python interface for Quantum mechanics/Molecular mechanics (QM/MM) calculation.
  
----
+
 ## Overview
 
 **gmx2qmmm** is a python package to bridge [Gaussian] and [Gromacs]. The test runs were performed using [Gaussian16] and [Gromacs 5.0.2], but the code should be able to read earlier Gaussian and other Gromacs versions. The only limits are the formats of the human-readable input and output files of each program, as such, conversion scripts can be written to make the interface work with any version, if the current code does not support it.
@@ -12,6 +12,7 @@ Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single 
  - [python 2.7] 
  - [Gaussian16] (and earlier version)
  - [Gromacs 5.0.2] (and earlier version)
+
 ## **gmx2qmmm** job
 |Job type|Calculation|
 | ------ | ------ |
