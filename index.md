@@ -40,7 +40,7 @@ Or contact us directly: [gmx2qmmm@gmail.com]
 [Gromacs 5.0.2]:<http://www.gromacs.org>
 [Gaussian]:<https://gaussian.com/gaussian16/>
 [Gromacs]:<http://www.gromacs.org>
-[GitHub]:<https://github.com/gmx2qmmm/gmx2qmmm_portable>
+[GitHub]:<https://github.com/gmx2qmmm/gmx2qmmm_portable/issues>
 [gmx2qmmm@gmail.com]:<mailto:gmx2qmmm@gmail.com>
 [gmx2qmmm reference]:<https://drive.google.com/file/d/1B6YNfCFRB4jqweVABamPQWlgziFlNIDK/view?usp=sharing>
 [https://doi.org/10.1002/qua.26486]:<https://doi.org/10.1002/qua.26486>
