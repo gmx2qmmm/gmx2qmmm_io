@@ -1,7 +1,16 @@
 theme: jekyll-theme-dinky
 markdown: kramdown 
 
+plugins:
+  - jekyll-relative-links
 
+relative_links:
+  enabled:     true
+  collections: false
+
+relative_links:
+  exclude:
+    - qm_para.md
 
 title: gmx2qmmm
 locale: en_US
