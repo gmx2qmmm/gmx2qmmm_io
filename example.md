@@ -30,8 +30,8 @@ Glycine serine (GLYSER) includes 21 atoms. In this case, we select the first 7 a
     ```
 4. Create **MM parameters (.dat)**: We use default setting in **MM parameters (.dat)**, so keep it empty.
 5. Create **QM/MM parameters (.dat)**: If we run 
-    - A SP calculation (default setting), keep **QM/MM parameters (.dat)** empty.
-    - A OPT calculation, set parameter _jobtype=OPT_ in **QM/MM parameters (.dat)**
+    - a SP calculation (default setting), keep **QM/MM parameters (.dat)** empty.
+    - a OPT calculation, set parameter _jobtype=OPT_ in **QM/MM parameters (.dat)**
         ```
         jobtype=OPT
         ```
@@ -44,6 +44,7 @@ Glycine serine (GLYSER) includes 21 atoms. In this case, we select the first 7 a
     ```
     python [path of gmx2qmmm.py ][-h] [-c COORD] [-p TOP] [-n QMATOMS] [-qm QMFILE] [-mm MMFILE] [-qmmm QMMMFILE] [-act ACT] [-path PATHFILE] [-g LOGFILE]
     ```
+
 
 [Reference to input files](input_params/input_params)
 
