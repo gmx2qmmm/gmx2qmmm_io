@@ -1,15 +1,6 @@
 # Site navigation links
 - title: Home
-  url: /
+  url: https://gmx2qmmm.github.io/gmx2qmmm_io/
 
-- title: Presentations
-  url: /presentations/
-
-- title: CV
-  url: /cv/
-
-- title: Blog
-  url: /blog/
-
-- title: Workshops
-  url: /workshops/
+- title: Input parameters
+  url: https://gmx2qmmm.github.io/gmx2qmmm_io/input_params/input_params
