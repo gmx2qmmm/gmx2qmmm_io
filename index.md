@@ -1,3 +1,5 @@
+sidebar:
+  nav: "docs"
 ## Welcome to gmx2qmmm
 
 **gmx2qmmm** is a python interface for Quantum mechanics/Molecular mechanics (QM/MM) calculation.
