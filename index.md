@@ -23,7 +23,9 @@ Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single 
 ## Quick example : glycine serine
  
 ![alt text](https://github.com/gmx2qmmm/gmx2qmmm_portable/blob/master/example/glyser.png?raw=true)
+
 The turtorial contains SP and OPT calculation of glycine serine (GLYSER).
+
 [See the tutorial](example)
 
 ## **gmx2qmmm** jobs
