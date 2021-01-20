@@ -24,6 +24,9 @@ Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single 
 [Conjugate gradient]:<https://en.wikipedia.org/wiki/Conjugate_gradient_method>
 [BFGS]:<https://en.wikipedia.org/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm>
 
+## **gmx2qmmm** parameters
+- [QM parameters](qm_param)
+
 ## References
 
 > A user‐friendly, Python‐based quantum mechanics/Gromacs interface: gmx2qmmm
