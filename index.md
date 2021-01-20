@@ -26,6 +26,8 @@ Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single 
 
 ## **gmx2qmmm** input files
 
+[see details](input_params/input_params.md)
+
 |Input files|Command|Default input name|
 | ------ | ------ | ------ |
 |Coordinate file (.g96 or .gro)|-c|conf.g96|
@@ -37,8 +39,6 @@ Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single 
 |Active atoms (.ndx)|-act|act.ndx|
 |Path file (.dat)|-path|path.dat|
 |Logfile (.log)|-g|logfile|
-
-[see details](input_params/input_params.md)
 
 ## References
 
