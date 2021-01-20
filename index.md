@@ -9,7 +9,7 @@
 Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single point calculations (i.e., the current energy of your system) or geometry optimizations. (Other ultilities are ongoing)
 
 ## System requirements
- - [python 2.7] 
+ - [python 2.7] +
  - [Gaussian16] (and earlier version)
  - [Gromacs 5.0.2] (and earlier version)
 
@@ -30,8 +30,8 @@ Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single 
 | ------ | ------ | ------ |
 |Coordinate file (.g96 or .gro)|-c|conf.g96|
 |Topology (.top)|-p|topol.top|
-|QM atoms file(.ndx)|-n|qmatoms.ndx|
-|[QM parameters](qm_para.md)(.dat)|-qm|qm.dat|
+|QM atoms file (.ndx)|-n|qmatoms.ndx|
+|[QM parameters](qm_para.md) (.dat)|-qm|qm.dat|
 |MM parameters (.dat)|-mm|mm.dat|
 |QM/MM parameters (.dat)|-qmmm|qmmm.dat|
 |Active atoms (.ndx)|-act|act.ndx|
