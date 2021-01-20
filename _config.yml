@@ -10,6 +10,7 @@ relative_links:
 
 relative_links:
   exclude:
+    - input_params/input_params.md
     - qm_para.md
 
 title: gmx2qmmm
