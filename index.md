@@ -43,6 +43,8 @@ The turtorial contains SP and OPT calculation of glycine serine (GLYSER).
 
 ## **gmx2qmmm** input files
 
+usage: gmx2qmmm.py [-h] [-c COORD] [-p TOP] [-n QMATOMS] [-qm QMFILE][-mm MMFILE] [-qmmm QMMMFILE] [-act ACT] [-path PATHFILE]                [-g LOGFILE]
+
 [see details](input_params/input_params)
 
 |Input files|Command|Default input name|
