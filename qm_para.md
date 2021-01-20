@@ -13,3 +13,7 @@ defaults.
 |cores=1 |Number of computing cores for the QM job, >1 implies SMP parallel job|
 |memory=1000|Memory for the QM job, total, in MB|
 |extra=NONE|Additional commands for QM program, currently adds a string unless NONE|
+
+---
+
+[HOME](https://gmx2qmmm.github.io/gmx2qmmm_io/)
