@@ -11,4 +11,4 @@ logo: # filename of a logo image that has been placed into your images directory
 owner:
   bio: "A python interface for Quantum mechanics/Molecular mechanics (QM/MM) computation."
   email: gmx2qmmm@gmail.com
-  github: gmx2qmmm
+  github: gmx2qmmm/gmx2qmmm_portable
