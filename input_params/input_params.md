@@ -20,7 +20,7 @@ The required input files in the package are
 
 This file should be taken almost as it comes from your Gromacs simulation. It needs “reboxing” in case your box is not cubic. Make sure your molecule is not suffering from periodic boundary artifacts. All these caveats however should be taken care of anyway due to the typical ways of QM/MM practice (such as preparing your system centered on a region of interest, surrounded by a drop of frozen solvent, removing all other parts of the system).
 
-[Back to TOP](#Input-files)
+[Back to TOP](input_params/input_params.md)
 
 ## Topology
 
@@ -32,7 +32,7 @@ In some cases, you might also need to provide the mass of an atom, since the for
 
 **At the current stage, the user is well advised to copy and fix the water and ions topologies to make sure that gmx2qmmm choses the correct parameters. The files provided with the examples should guide the user towards the required formats.**
 
-[Back to TOP](#Input-files)
+[Back to TOP](input_params/input_params.md)
 
 ## QM atoms file
 
@@ -41,29 +41,29 @@ formatting to, e.g., visually separate different residues.
 
 ## QM parameters
 
-[Back to TOP](#Input-files)
+[Back to TOP](input_params/input_params.md)
 
 ## MM parameters
 
-[Back to TOP](#Input-files)
+[Back to TOP](input_params/input_params.md)
 
 ## QM/MM parameters
 
-[Back to TOP](#Input-files)
+[Back to TOP](input_params/input_params.md)
 
 ## Active atoms
 
-[Back to TOP](#Input-files)
+[Back to TOP](input_params/input_params.md)
 
 ## Path
 The path file includes the path of the specific QM and MM software and the executed command for the certain software. The following options, one per line, may be given in this file; in any order.
 
-[Back to TOP](#Input-files)
+[Back to TOP](input_params/input_params.md)
 
 ## Logfile
 
 This logfile contains all relevant actions of gmx2qmmm with a time stamp for each action. It will also contain the error messages if something went wrong that is not related to the python code.
 
-[Back to TOP](#Input-files)
+[Back to TOP](input_params/input_params.md)
 
 [Back to HOME](https://gmx2qmmm.github.io/gmx2qmmm_io/)
