@@ -18,9 +18,13 @@ Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single 
 - [Download in Git manually](https://github.com/gmx2qmmm/gmx2qmmm_portable)
 - `git clone`
   - python 2: 
-     ```git clone --branch master https://github.com/gmx2qmmm/gmx2qmmm_portable.git```
+     ```
+     git clone --branch master https://github.com/gmx2qmmm/gmx2qmmm_portable.git
+     ```
   - python 3: 
-     ```git clone --branch p3 	https://github.com/gmx2qmmm/gmx2qmmm_portable.git```
+     ```
+     git clone --branch p3 	https://github.com/gmx2qmmm/gmx2qmmm_portable.git
+     ```
 
 ## Startup examples : glycine serine
  
