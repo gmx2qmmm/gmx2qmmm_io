@@ -32,7 +32,7 @@ In some cases, you might also need to provide the mass of an atom, since the for
 
 **At the current stage, the user is well advised to copy and fix the water and ions topologies to make sure that gmx2qmmm choses the correct parameters. The files provided with the examples should guide the user towards the required formats.**
 
-[Back to TOP](input_params.md)
+[Back to TOP](input_params)
 
 ## QM atoms file
 
@@ -41,29 +41,29 @@ formatting to, e.g., visually separate different residues.
 
 ## QM parameters
 
-[Back to TOP](input_params.md)
+[Back to TOP](input_params)
 
 ## MM parameters
 
-[Back to TOP](input_params.md)
+[Back to TOP](input_params)
 
 ## QM/MM parameters
 
-[Back to TOP](input_params.md)
+[Back to TOP](input_params)
 
 ## Active atoms
 
-[Back to TOP](input_params.md)
+[Back to TOP](input_params)
 
 ## Path
 The path file includes the path of the specific QM and MM software and the executed command for the certain software. The following options, one per line, may be given in this file; in any order.
 
-[Back to TOP](input_params.md)
+[Back to TOP](input_params)
 
 ## Logfile
 
 This logfile contains all relevant actions of gmx2qmmm with a time stamp for each action. It will also contain the error messages if something went wrong that is not related to the python code.
 
-[Back to TOP](input_params.md)
+[Back to TOP](input_params)
 
-[Back to HOME](../index.md)
+[Back to HOME](../index)
