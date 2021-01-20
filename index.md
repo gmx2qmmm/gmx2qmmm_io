@@ -23,13 +23,26 @@ Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single 
 [Steepest descent]:<https://en.wikipedia.org/wiki/Gradient_descent>
 [Conjugate gradient]:<https://en.wikipedia.org/wiki/Conjugate_gradient_method>
 [BFGS]:<https://en.wikipedia.org/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm>
- 
+
+## References
+
+> A user‐friendly, Python‐based quantum mechanics/Gromacs interface: gmx2qmmm
+> Jan P. Götze, Yuan‐Wei Pi, Simon Petry, Fabian Langkabel,  Jan Felix Witte, Oliver Lemke
+> https://doi.org/10.1002/qua.26486
+
+## Support and development
+For bug reports/suggestions/complaints please raise an issue on [GitHub].
+
+Or contact us directly: [gmx2qmmm@gmail.com]
  
 [python 2.7]:<https://www.python.org/download/releases/2.7>
 [Gaussian16]:<https://gaussian.com/gaussian16/>
 [Gromacs 5.0.2]:<http://www.gromacs.org>
 [Gaussian]:<https://gaussian.com/gaussian16/>
- 
+[Gromacs]:<http://www.gromacs.org>
+[GitHub]:<https://github.com/gmx2qmmm/gmx2qmmm_portable>
+[gmx2qmmm@gmail.com]:<mailto:gmx2qmmm@gmail.com>
+[gmx2qmmm reference]:<https://drive.google.com/file/d/1B6YNfCFRB4jqweVABamPQWlgziFlNIDK/view?usp=sharing>
  
 <!--You can use the [editor on GitHub](https://github.com/gmx2qmmm/gmx2qmmm_io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.-->
 
