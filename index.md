@@ -25,7 +25,7 @@ Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single 
 [BFGS]:<https://en.wikipedia.org/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm>
 
 ## **gmx2qmmm** parameters
-- [QM parameters](qm_param)
+- [QM parameters](qm_para.md)
 
 ## References
 
