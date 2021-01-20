@@ -41,22 +41,69 @@ formatting to, e.g., visually separate different residues.
 
 ## QM parameters
 
+The following options, one per line, may be given in this file; in any order.
+
+|Parameter & Default|Discription|
+|---|---|
+|program=G16 |QM program to use; currently only Gaussian16|
+|method=BP86|QM method to use; any choice that allows for point charge gradients is valid|
+|basis=STO-3G|QM basis set|
+|charge=0 |Charge of the QM region after removal of the environment|
+|multiplicity=1| Multiplicity of the QM region after removal of the environment|
+|cores=1 |Number of computing cores for the QM job, >1 implies SMP parallel job|
+|memory=1000|Memory for the QM job, total, in MB|
+|extra=NONE|Additional commands for QM program, currently adds a string unless NONE|
+
 [Back to TOP](input_params)
 
 ## MM parameters
+
+The following options, one per line, may be given in this file; in any order. The values below are the defaults. Note that currently the file has no effect on the calculations.
+
+|Parameter & Default|Discription|
+|---|---|
+|rvdw=2.0 |van-der-Waals radius, in nm|
+
+Additionally, any line containg a string with -Dmystring will add a mystring flag to a list of flags.
 
 [Back to TOP](input_params)
 
 ## QM/MM parameters
 
+The following options, one per line, may be given in this file; in any order.
+
+|Parameter & Default|Discription|
+|---|---|
+|jobname=testjob |Name of the job|
+|jobtype=singlepoint |Jobtype. “singlepoint” and “opt” are valid|
+|propagator=steep |read if jobtype is “opt”, “steep”, “conjgrad”(conjugate gradient) and BFGS optizer currently available|
+|maxcycle=5 |maximum number of optimization iterations, not including trial steps for steep)
+|initstep=0.1 |initial step size for jobtype=opt, will change in a “steep” opt, in bohrradii|
+|f_thresh=0.00001 |force threshold for jobtype=opt, in hartree/bohrradius|
+|databasefit = morse |correction method for qmmm. Possible to use “morse”, “poly” or “no” correction|
+|optlastonly = yes|keep the last step files in optimization, turn off enter “no”|
+
 [Back to TOP](input_params)
 
 ## Active atoms
+
+Similar to **QM atoms file**, this file contains all active atoms. While it is advisable to include the QM atoms in the
+active region, it is not necessary. In practice, all atoms not in this file have their forces deleted before
+evaluating the forces for any purpose. Therefore only atoms listed in this file will move between steps.
+The energy is evaluated for all atoms at any time, regardless of the content of this file.
 
 [Back to TOP](input_params)
 
 ## Path
 The path file includes the path of the specific QM and MM software and the executed command for the certain software. The following options, one per line, may be given in this file; in any order.
+
+|Parameter & Default|Discription|
+|---|---|
+|g16path = gaussian/bin/ |The path of Gaussian16|
+|g16cmd = rung16 |The executed command of Gaussian16|
+|gmxpath = gromacs-2019.1/bin/ |The path of GROMACS|
+|gmxcmd = gmx19 |The executed command of GROMACS|
+|gmxtop_path= gromacs-2019.1/share/gromacs/top/ |The path of force filed in GROMACS|
 
 [Back to TOP](input_params)
 
