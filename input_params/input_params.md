@@ -82,6 +82,7 @@ The following options, one per line, may be given in this file; in any order.
 |maxcycle=5 |maximum number of optimization iterations, not including trial steps for steep)
 |initstep=0.1 |initial step size for jobtype=opt, will change in a “steep” opt, in bohrradii|
 |f_thresh=0.00001 |force threshold for jobtype=opt, in hartree/bohrradius|
+|current_step=0|the current step of the opimization|
 |databasefit = morse |correction method for qmmm. Possible to use “morse”, “poly” or “no” correction|
 |optlastonly = yes|keep the last step files in optimization, turn off enter “no”|
 
