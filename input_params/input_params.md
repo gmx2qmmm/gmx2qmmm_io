@@ -78,13 +78,13 @@ The following options, one per line, may be given in this file; in any order.
 |---|---|
 |jobname=testjob |Name of the job|
 |jobtype=singlepoint |Jobtype. “singlepoint” and “opt” are valid|
-|propagator=steep |read if jobtype is “opt”, “steep”, “conjgrad”(conjugate gradient) and BFGS optizer currently available|
-|maxcycle=5 |maximum number of optimization iterations, not including trial steps for steep)
-|initstep=0.1 |initial step size for jobtype=opt, will change in a “steep” opt, in bohrradii|
-|f_thresh=0.00001 |force threshold for jobtype=opt, in hartree/bohrradius|
-|current_step=0|the current step of the opimization|
+|propagator=steep |Read if jobtype is “opt”, “steep”, “conjgrad”(conjugate gradient) and BFGS optizer currently available|
+|maxcycle=5 |Maximum number of optimization iterations, not including trial steps for steep)
+|initstep=0.1 |Initial step size for jobtype=opt, will change in a “steep” opt, in bohrradii|
+|f_thresh=0.00001 |Force threshold for jobtype=opt, in hartree/bohrradius|
+|current_step=0|The current step of the opimization. To continue previous optimization, please specify the last step of previous calculation.|
 |databasefit = morse |correction method for qmmm. Possible to use “morse”, “poly” or “no” correction|
-|optlastonly = yes|keep the last step files in optimization, turn off enter “no”|
+|optlastonly = yes|Keep the last step files in optimization, turn off enter “no”|
 
 [Back to TOP](input_params)
 
