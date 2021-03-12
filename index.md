@@ -81,7 +81,7 @@ usage: gmx2qmmm.py [-h] [-c COORD] [-p TOP] [-n QMATOMS] [-qm QMFILE][-mm MMFILE
    |Energy|`oenergy_scanRa-b_step.txt` |QM, MM, Link and Total Energy in each step. a,b:scan atom|
    |Forces|`oforces_scanRa-b_step.txt` |X,Y,Z Forces at each atom in each step. a,b:scan atom|
 
-    Since there are many output files in scan job, the output files are store in sub-directory of the base directroy.
+    Since there are many output files in the scan job, the output files are store in a subdirectory of the base directory. 
     Example: Linear scan atom1 and atom2 with 3 steps
     ```bash
     base_directory/
