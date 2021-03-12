@@ -30,6 +30,8 @@ Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single 
 |Geometry optimizations (OPT)|Optimize the system energy via optimizer ([Steepest descent], [Conjugate gradient] or [BFGS])|
 |Relaxed Scan (SCAN)|Relaxed linear scan (angle and dihedral angle are in development)|
 
+If the calculation is interupted at some point, please check [**Continue the calculation**](checkpoint) to continue.
+
 [Steepest descent]:<https://en.wikipedia.org/wiki/Gradient_descent>
 [Conjugate gradient]:<https://en.wikipedia.org/wiki/Conjugate_gradient_method>
 [BFGS]:<https://en.wikipedia.org/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm>
