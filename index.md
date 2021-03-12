@@ -19,7 +19,7 @@ Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single 
 - `git clone`
      
      ```
-     git clone --branch p3 	https://github.com/gmx2qmmm/gmx2qmmm_portable.git
+     git clone --branch p3	https://github.com/gmx2qmmm/gmx2qmmm_portable.git
      ```
      
 ## **gmx2qmmm** jobs
