@@ -91,7 +91,7 @@ The following options, one per line, may be given in this file; in any order.
 #### scanfile format
 
 ```
-scan_type scan_atom scan_stepsize scanstep
+[scan_type] [scan_atoms...] [scan_stepsize] [scanstep]
 ```
 
 
