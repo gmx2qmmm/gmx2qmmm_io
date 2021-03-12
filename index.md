@@ -6,10 +6,10 @@
 ## Overview
 
 **gmx2qmmm** is a python package to bridge [Gaussian] and [Gromacs]. The test runs were performed using [Gaussian16] and [Gromacs 5.0.2], but the code should be able to read earlier Gaussian and other Gromacs versions. The only limits are the formats of the human-readable input and output files of each program, as such, conversion scripts can be written to make the interface work with any version, if the current code does not support it.
-Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single point calculations (i.e., the current energy of your system) or geometry optimizations. (Other ultilities are ongoing)
+Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single point calculations (i.e., the current energy of your system), geometry optimizations, and linear relaxed scan. (Other ultilities are ongoing)
 
 ## System requirements
- - [python 2.7] +
+ - [python 3.6]+
  - [Gaussian16] (and earlier version)
  - [Gromacs 5.0.2] (and earlier version)
 
@@ -17,29 +17,18 @@ Conceptually, **gmx2qmmm** creates a QM/MM potential and performs either single 
 
 - [Download in Git manually](https://github.com/gmx2qmmm/gmx2qmmm_portable)
 - `git clone`
-  - python 2: 
-     ```
-     git clone --branch master https://github.com/gmx2qmmm/gmx2qmmm_portable.git
-     ```
-  - python 3: 
+     
      ```
      git clone --branch p3 	https://github.com/gmx2qmmm/gmx2qmmm_portable.git
      ```
-
-## Startup examples : glycine serine
- 
-The turtorial contains SP and OPT calculation of glycine serine (GLYSER).
-
-[See the tutorial](example)
-
-![alt text](https://github.com/gmx2qmmm/gmx2qmmm_portable/blob/master/example/glyser.png?raw=true)
-
+     
 ## **gmx2qmmm** jobs
 
 |Job type|Calculation|
 | --- | --- |
-|Single point calcuation (SP)|Calculate single point energy and forces (.xyz) |
+|Single point calcuation (SP)|Calculate single point energy and forces|
 |Geometry optimizations (OPT)|Optimize the system energy via optimizer ([Steepest descent], [Conjugate gradient] or [BFGS])|
+|Relaxed Scan (SCAN)|Relaxed linear scan (angle and dihedral angle are in development)|
 
 [Steepest descent]:<https://en.wikipedia.org/wiki/Gradient_descent>
 [Conjugate gradient]:<https://en.wikipedia.org/wiki/Conjugate_gradient_method>
@@ -65,6 +54,59 @@ usage: gmx2qmmm.py [-h] [-c COORD] [-p TOP] [-n QMATOMS] [-qm QMFILE][-mm MMFILE
 |Path file (.dat)|-path|path.dat|
 |Logfile (.log)|-g|logfile|
 
+## **gmx2qmmm** output files
+
+- Single point calcuation (SP)
+
+   ||File name|Description|
+   |---|---|---|
+   |Energy|`oenergy.txt` |QM, MM, Link and Total Energy|
+   |Forces|`oforces.txt` |X,Y,Z Forces at each atom|
+
+- Geometry optimizations (OPT)
+
+   ||File name|Description|
+   |---|---|---|
+   |Energy|`oenergy.txt` |QM, MM, Link and Total Energy in each step|
+   |Forces|`oforces.txt` |X,Y,Z Forces at each atom in each step|
+   
+   - Set `optlastinly=YES` in `-qmmm` file : Remain the last step information only
+   - Set `optlastinly=NO` in `-qmmm` file : Remain all information
+
+
+- Relaxed Scan (SCAN)
+
+   ||File name|Description|
+   |---|---|---|
+   |Energy|`oenergy_scanRa-b_step.txt` |QM, MM, Link and Total Energy in each step. a,b:scan atom|
+   |Forces|`oforces_scanRa-b_step.txt` |X,Y,Z Forces at each atom in each step. a,b:scan atom|
+
+    Since there are many output files in scan job, the output files are store in sub-directory of the base directroy.
+    Example: Linear scan atom1 and atom2 with 3 steps
+    ```bash
+    base_directory/
+    |-- scanR/
+        |--R1-2/ (contains calculated files)
+    |-- oenergy_scanR1-2_1.txt (OPT energies in scan step 1)
+    |-- oenergy_scanR1-2_2.txt (OPT energies in scan step 2)
+    |-- oenergy_scanR1-2_3.txt (OPT energies in scan step 3)
+    |-- oforces_scanR1-2_1.txt (OPT forces in scan step 1)
+    |-- oforces_scanR1-2_2.txt (OPT forces in scan step 2)
+    |-- oforces_scanR1-2_3.txt (OPT forces in scan step 3)
+    ...
+    ```
+
+
+## Startup examples : glycine serine
+ 
+The turtorial contains SP and OPT calculation of glycine serine (GLYSER).
+
+[See the tutorial](example)
+
+![alt text](https://github.com/gmx2qmmm/gmx2qmmm_portable/blob/master/example/glyser.png?raw=true)
+
+
+
 ## References
 
 > A user‐friendly, Python‐based quantum mechanics/Gromacs interface: gmx2qmmm
@@ -77,6 +119,7 @@ For bug reports/suggestions/complaints please raise an issue on [GitHub].
 Or contact us directly: [gmx2qmmm@gmail.com]
  
 [python 2.7]:<https://www.python.org/download/releases/2.7>
+[python 3.6]:<https://docs.python.org/3.6>
 [Gaussian16]:<https://gaussian.com/gaussian16/>
 [Gromacs 5.0.2]:<http://www.gromacs.org>
 [Gaussian]:<https://gaussian.com/gaussian16/>
