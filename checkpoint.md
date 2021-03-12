@@ -1,7 +1,7 @@
 # Continue the Calculation
 To continue the calculation at some point, please follow the steps below,
 
-### Optimization
+### Geometry optimizations (OPT)
 
 1. Specify the current step of optimization in QM/MM parameters input files.
    - For example: Start from optimized step2
@@ -27,7 +27,7 @@ To continue the calculation at some point, please follow the steps below,
 
 
 
-### Scan
+### Relaxed Scan (SCAN)
 
 1. Specify the current step of optimization in QM/MM parameters input files.
    - For example: Linear scan atom1 and atom2 with 3 steps, and continue from scan step2 and optimized step3
