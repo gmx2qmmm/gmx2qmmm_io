@@ -83,8 +83,37 @@ The following options, one per line, may be given in this file; in any order.
 |initstep=0.1 |Initial step size for jobtype=opt, will change in a “steep” opt, in bohrradii|
 |f_thresh=0.00001 |Force threshold for jobtype=opt, in hartree/bohrradius|
 |current_step=0|The current step of the opimization. To continue previous optimization, please specify the last step of previous calculation.|
-|databasefit = morse |correction method for qmmm. Possible to use “morse”, “poly” or “no” correction|
-|optlastonly = yes|Keep the last step files in optimization, turn off enter “no”|
+|databasefit=morse |correction method for qmmm. Possible to use “morse”, “poly” or “no” correction|
+|optlastonly=yes|Keep the last step files in optimization, turn off enter “no”|
+|scanfile=scan.txt|The scan information for scan job|
+|scan_step=0|The current step of the scan opimization. To continue previous optimization, please specify the last scan step.|
+
+#### scanfile format
+
+```
+scan_type scan_atom scan_stepsize scanstep
+```
+|Parameter|Description|
+|---|---|
+|scan_type|The type of scan, linear=R, angle=A, dihedral=D. (Linear scan avalible at the moment)|
+|scan_atom|The index scanned atom|
+|scan_stepsize | The step size for each stepped, in bohrradii|  
+|scanstep|The stepped time for scan job|
+
+ex: Linear scan with atom1 and atom2 stepped 3 times by 0.1
+```
+R 1 2 0.1 3
+```
+ex: Angle scan with atom1, atom2 and atom3 stepped 3 times by 0.1
+```
+A 1 2 3 0.1 3
+```
+ex: Dihedral scan with atom1, atom2, atom3 and atom4 stepped 3 times by 0.1
+```
+D 1 2 3 4 0.1 3
+```
+
+
 
 [Back to TOP](input_params)
 
