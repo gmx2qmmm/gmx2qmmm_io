@@ -93,12 +93,15 @@ The following options, one per line, may be given in this file; in any order.
 ```
 scan_type scan_atom scan_stepsize scanstep
 ```
+
+
 |Parameter|Description|
 |---|---|
 |scan_type|The type of scan, linear=R, angle=A, dihedral=D. (Linear scan avalible at the moment)|
 |scan_atom|The index scanned atom|
 |scan_stepsize | The step size for each stepped, in bohrradii|  
 |scanstep|The stepped time for scan job|
+
 
 ex: Linear scan with atom1 and atom2 stepped 3 times by 0.1
 ```
