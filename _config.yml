@@ -13,6 +13,7 @@ relative_links:
     - index.md
     - input_params/input_params.md
     - example.md
+    - checkpoint.md
 
 title: gmx2qmmm
 locale: en_US
