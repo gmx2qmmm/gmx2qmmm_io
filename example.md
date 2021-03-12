@@ -7,6 +7,8 @@ Glycine serine (GLYSER) includes 21 atoms. In this case, we select the first 7 a
 
 ### Examples in `example/sp` and `example/opt`
 
+**Before running the calculation, please setup paths of the Gromacs and Gaussian**
+
 - Single point calculation
     1. Go to `/example/sp` directory
     2. Run `python ../../gmx2qmmm.py`
