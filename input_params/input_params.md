@@ -84,7 +84,7 @@ The following options, one per line, may be given in this file; in any order.
 |f_thresh=0.00001 |Force threshold for jobtype=opt, in hartree/bohrradius|
 |current_step=0|The current step of the opimization. To continue previous optimization, please specify the last step of previous calculation.|
 |databasefit=morse |correction method for qmmm. Possible to use “morse”, “poly” or “no” correction|
-|print_level=normal|"Normal" only keep the last step files in optimization. Print full information please specify “Full”|
+|print_level=normal|In OPT and SCAN, "normal" only keep the last step files in optimization. Print full information please specify “full”|
 |scanfile=scan.txt|The scan information for scan job|
 |scan_step=0|The current step of the scan opimization. To continue previous optimization, please specify the last scan step.|
 
