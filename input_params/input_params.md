@@ -107,11 +107,11 @@ ex: Linear scan with atom1 and atom2 stepped 3 times by 0.1
 ```
 R 1 2 0.1 3
 ```
-ex: Angle scan with atom1, atom2 and atom3 stepped 3 times by 0.1
+ex: Angle scan with atom1, atom2 and atom3 stepped 3 times by 0.1 (Angle scan is not avalible currently)
 ```
 A 1 2 3 0.1 3
 ```
-ex: Dihedral scan with atom1, atom2, atom3 and atom4 stepped 3 times by 0.1
+ex: Dihedral scan with atom1, atom2, atom3 and atom4 stepped 3 times by 0.1 (Dihedral scan is not avalible currently)
 ```
 D 1 2 3 4 0.1 3
 ```
