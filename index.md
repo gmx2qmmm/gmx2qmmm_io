@@ -80,8 +80,10 @@ usage: gmx2qmmm.py [-h] [-c COORD] [-p TOP] [-n QMATOMS] [-qm QMFILE][-mm MMFILE
 
    ||File name|Description|
    |---|---|---|
-   |Energy|`oenergy_scanRa-b_step.txt` |QM, MM, Link and Total Energy in each step. a,b:scan atom|
-   |Forces|`oforces_scanRa-b_step.txt` |X,Y,Z Forces at each atom in each step. a,b:scan atom|
+   |Energy|`oenergy.txt` |QM, MM, Link and Total Energy in each scan step|
+   |Forces|`oforces.txt` |X,Y,Z Forces at each atom in each scan step|
+   |Energy|`oenergy_scanRa-b_step.txt` |**`print_level=FULL` in `-qmmm` file is required**. QM, MM, Link and Total Energy every OPT step in each scan step. a,b:scan atom|
+   |Forces|`oforces_scanRa-b_step.txt` |**`print_level=FULL` in `-qmmm` file is required**. X,Y,Z Forces at each atom every OPT step in each scan step. a,b:scan atom|
 
     Since there are many output files in the scan job, the output files are store in a subdirectory of the base directory. 
     
