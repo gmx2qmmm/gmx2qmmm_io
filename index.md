@@ -72,8 +72,8 @@ usage: gmx2qmmm.py [-h] [-c COORD] [-p TOP] [-n QMATOMS] [-qm QMFILE][-mm MMFILE
    |Energy|`oenergy.txt` |QM, MM, Link and Total Energy in each step|
    |Forces|`oforces.txt` |X,Y,Z Forces at each atom in each step|
    
-   - Set `optlastinly=YES` in `-qmmm` file : Remain the last step information only
-   - Set `optlastinly=NO` in `-qmmm` file : Remain all information
+   - Set `print_level=NORMAL` in `-qmmm` file : Remain the last step information only
+   - Set `print_level=FULL` in `-qmmm` file : Remain all information
 
 
 - Relaxed Scan (SCAN)
@@ -84,11 +84,25 @@ usage: gmx2qmmm.py [-h] [-c COORD] [-p TOP] [-n QMATOMS] [-qm QMFILE][-mm MMFILE
    |Forces|`oforces_scanRa-b_step.txt` |X,Y,Z Forces at each atom in each step. a,b:scan atom|
 
     Since there are many output files in the scan job, the output files are store in a subdirectory of the base directory. 
-    Example: Linear scan atom1 and atom2 with 3 steps
+    
+    - Example: Linear scan atom1 and atom2 with 3 steps with `print_level=NORMAL`
     ```bash
     base_directory/
     |-- scanR/
-        |--R1-2/ (contains calculated files)
+        |--R1-2/ (contains last OPT output)
+    |-- oenergy.txt (Scan energies)
+    |-- oforces.txt (Scan Forces)
+    ...
+    ```
+    
+    - Example: Linear scan atom1 and atom2 with 3 steps with `print_level=FULL`
+    
+    ```bash
+    base_directory/
+    |-- scanR/
+        |--R1-2/ (contains all OPT output)
+    |-- oenergy.txt (Scan energies)
+    |-- oforces.txt (Scan Forces)
     |-- oenergy_scanR1-2_1.txt (OPT energies in scan step 1)
     |-- oenergy_scanR1-2_2.txt (OPT energies in scan step 2)
     |-- oenergy_scanR1-2_3.txt (OPT energies in scan step 3)
