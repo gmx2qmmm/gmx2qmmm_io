@@ -87,7 +87,7 @@ usage: gmx2qmmm.py [-h] [-c COORD] [-p TOP] [-n QMATOMS] [-qm QMFILE][-mm MMFILE
 
     Since there are many output files in the scan job, the output files are store in a subdirectory of the base directory. 
     
-    - Example: Linear scan atom1 and atom2 with 3 steps with `print_level=NORMAL`
+    - Example: Linear scan atom1 and atom2 by 3 steps with `print_level=NORMAL`
     ```bash
     base_directory/
     |-- scanR/
@@ -97,7 +97,7 @@ usage: gmx2qmmm.py [-h] [-c COORD] [-p TOP] [-n QMATOMS] [-qm QMFILE][-mm MMFILE
     ...
     ```
     
-    - Example: Linear scan atom1 and atom2 with 3 steps with `print_level=FULL`    
+    - Example: Linear scan atom1 and atom2 by 3 steps with `print_level=FULL`    
     ```bash
     base_directory/
     |-- scanR/
