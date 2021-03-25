@@ -36,6 +36,17 @@ Glycine serine (GLYSER) includes 21 atoms. In this case, we select the first 7 a
         ```
         jobtype=OPT
         ```
+    - a Linear SCAN calculation, set parameter _jobtype=SCAN_ in **QM/MM parameters (.dat)**
+        ```
+        jobtype=SCAN
+        ```
+        
+        - Create a scan file `scan.txt`, for example: Linear scan atom1 and atom2 by 3 steps with 0.1 stepsize
+            ```
+            R 1 2 0.1 3
+            ```
+
+
 5. Create **Path file (.dat)**: Setup your software path in **Path file (.dat)**
 6. Create **Active atoms (.ndx)**: Select active atoms in the calculation, in this case we select all. So set **Active atoms (.ndx)**,
     ```
